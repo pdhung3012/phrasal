@@ -888,6 +888,7 @@ public class PhraseExtract {
    * @throws IOException
    */
   public static void main(String[] args) throws IOException {
+	  System.out.println("hello");
     if (args.length == 1 && args[0].equals("-help")) {
       usage();
       return;
