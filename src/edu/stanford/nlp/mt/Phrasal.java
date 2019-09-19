@@ -1605,6 +1605,7 @@ public class Phrasal {
    * @throws Exception
    */
   public static void main(String[] args) throws Exception {
+	//  System.out.println("Welcome to the updated Phrasal");
     final Properties options = StringUtils.argsToProperties(args);
     final String configFile = options.containsKey("") ? (String) options.get("") : null;
     options.remove("");
@@ -1624,5 +1625,6 @@ public class Phrasal {
     
     if (options.containsKey("text")) p.decode(new FileInputStream(new File(options.getProperty("text"))), true);
     else p.decode(System.in, true);
+   // System.out.println("You are running the updated Phrasal");
   }
 }
